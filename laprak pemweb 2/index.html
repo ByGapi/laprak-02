@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scroll Effect with Bootstrap - Tema Natal</title>
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS (untuk ikon Natal) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- Banner Header -->
+    <header id="banner" class="sticky-header">
+        <img src="assets/16243.jpg" alt="Header Image" class="header-image">
+        <div class="header-box">
+            <h1><i class="fas fa-tree"></i> LAPORAN TEORI <i class="fas fa-tree"></i></h1>
+            <h2><i class="fas fa-snowflake"></i> Izzat Islami Kagapi | 202331012 <i class="fas fa-snowflake"></i></h2>
+        </div>
+    </header>
+  
+    <div style="height: 250px;"></div> <!-- Spacer -->
+      <!-- Tombol Mode Berantakan -->
+<button id="messyModeButton" class="btn btn-warning">Aktifkan Mode Berantakan</button>
+<!-- Gambar Mode Berantakan -->
+<img id="chaosImage" src="assets/Screenshot 2024-11-10 144444.png" alt="Chaos Mode Image" class="chaos-image hidden">
+
+    <!-- Main Content -->
+    <main class="container mt-4">
+        <section class="content">
+            <!-- Artikel 1 -->
+            <article class="mb-4 p-3 rounded border">
+                <h2 class="toggle-content"><i class="fas fa-gift"></i> 1. Mengapa menggunakan CSS dan JavaScript dalam pemrograman web?</h2>
+                <div class="content">
+                    <h3>CSS (Cascading Style Sheets)</h3>
+                    <p>CSS digunakan untuk mengatur tampilan dan layout halaman web, seperti warna, font, spasi, margin, dan padding. Manfaat utama menggunakan CSS:</p>
+                    <ol>
+                        <li>Pemisahan Konten dan Tampilan: Memisahkan HTML (konten) dari desain sehingga lebih mudah dikelola.</li>
+                        <li>Efisiensi: Perubahan desain dapat dilakukan secara global dengan mengedit satu file CSS.</li>
+                        <li>Responsive Design: CSS memungkinkan pembuatan halaman web yang responsif untuk berbagai perangkat.</li>
+                    </ol>
+                    <h3>JavaScript</h3>
+                    <p>JavaScript adalah bahasa pemrograman yang digunakan untuk menambahkan interaktivitas dan fungsi dinamis pada halaman web, contoh: tombol interaktif, validasi formulir, animasi. Keuntungan utama:</p>
+                    <ol>
+                        <li>Interaktivitas: Membuat pengalaman pengguna lebih menarik, seperti dropdown menus dan sliders.</li>
+                        <li>Dinamisme: Konten halaman bisa diubah secara dinamis tanpa perlu memuat ulang seluruh halaman (misalnya, dengan AJAX).</li>
+                        <li>Kompatibilitas Browser: Bisa dijalankan langsung di browser tanpa perlu perangkat tambahan.</li>
+                    </ol>
+                </div>
+            </article>
+            <!-- Artikel 2 -->
+            <article class="mb-4 p-3 rounded border">
+                <h2 class="toggle-content"><i class="fas fa-gift"></i> 2. Bagaimana CSS dan JavaScript dapat diintegrasikan dalam pemrograman web?</h2>
+                <div class="content">
+                    <h3>CSS</h3>
+                    <p>CSS digunakan untuk mengatur tampilan web dan dapat diintegrasikan dengan:</p>
+                    <ol>
+                        <li>Inline: Menggunakan atribut <code>style</code>.</li>
+                        <li>Internal: Ditulis di tag <code>&lt;style&gt;</code> dalam <code>&lt;head&gt;</code>.</li>
+                        <li>Eksternal: File CSS ditautkan dengan tag <code>&lt;link&gt;</code>.</li>
+                    </ol>
+                    <h3>JavaScript</h3>
+                    <p>JavaScript digunakan untuk menambahkan fungsi dan dapat diintegrasikan dengan:</p>
+                    <ol>
+                        <li>Inline: Menggunakan atribut seperti <code>onclick</code>.</li>
+                        <li>Internal: Ditulis dalam tag <code>&lt;script&gt;</code>.</li>
+                        <li>Eksternal: File JS ditautkan dengan tag <code>&lt;script&gt;</code>.</li>
+                    </ol>
+                </div>
+            </article>
+            <!-- Artikel 3 -->
+            <article class="mb-4 p-3 rounded border">
+                <h2 class="toggle-content"><i class="fas fa-gift"></i> 3. Jelaskan apa saja keuntungan menggunakan JavaScript dan CSS?</h2>
+                <div class="content">
+                    <h3>CSS</h3>
+                    <ol>
+                        <li>Desain Konsisten: Memisahkan tampilan dari konten.</li>
+                        <li>Responsive: Mendukung tampilan adaptif di berbagai perangkat.</li>
+                        <li>Efisiensi: Mempercepat loading dengan file yang lebih ringan.</li>
+                    </ol>
+                    <h3>JavaScript</h3>
+                    <ol>
+                        <li>Performa Cepat: Diproses langsung di browser.</li>
+                        <li>Kompatibilitas: Berjalan di hampir semua browser.</li>
+                        <li>Interaktivitas: Membuat elemen dinamis (dropdown, animasi) tanpa refresh.</li>
+                    </ol>
+                </div>
+            </article>
+            <!-- Artikel 4 -->
+            <article class="mb-4 p-3 rounded border">
+                <h2 class="toggle-content"><i class="fas fa-gift"></i> 4. Jelaskan apa saja keuntungan menggunakan Bootstrap?</h2>
+                <div class="content">
+                    <ol>
+                        <li>Responsif: Sistem grid fleksibel untuk berbagai perangkat.</li>
+                        <li>Komponen Siap Pakai: Navbar, tombol, form, dll.</li>
+                        <li>Konsisten: Kompatibel di berbagai browser.</li>
+                    </ol>
+                </div>
+            </article>
+            <!-- Artikel 5 -->
+            <article class="mb-4 p-3 rounded border">
+                <h2 class="toggle-content"><i class="fas fa-gift"></i> 5. Berikan salah satu contoh penggunaan Bootstrap lalu jelaskan apa fungsinya serta berikan screenshot hasil running di web-nya!</h2>
+                <div class="content">
+                    <img src="assets/Screenshot 2024-11-09 215729.png" alt="">
+                    <img src="assets/Screenshot 2024-11-09 220104.png" alt="">
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    <!-- Bootstrap Bundle JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/java.js"></script>
+</body>
+</html>

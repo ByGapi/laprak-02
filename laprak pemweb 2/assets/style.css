@@ -1,0 +1,164 @@
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #B22222; /* Warna merah Natal */
+    color: #FFFFFF; /* Teks putih untuk kontras */
+}
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(178, 34, 34, 0.9); /* Warna merah dengan transparansi */
+    color: #fff;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sticky-header.hidden {
+    transform: translateY(-100%);
+}
+
+/* Gambar di Header */
+.header-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Letakkan di belakang teks header */
+}
+
+.header-box {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    z-index: 1;
+}
+
+.header-box h1, .header-box h2 {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 8px #8B0000; /* Efek bayangan pada teks */
+}
+
+main {
+    margin-top: 250px; /* Sesuaikan angka sesuai tinggi total header */
+    padding: 20px;
+}
+
+.content article {
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih semi-transparan */
+    border: 1px solid #8B0000; /* Border merah gelap */
+    border-radius: 5px;
+    padding: 20px;
+    color: #000000; /* Teks hitam untuk konten */
+}
+
+@media (max-width: 768px) {
+    main {
+        margin-top: 180px; /* Atur untuk perangkat layar kecil */
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+/* Atur ukuran gambar di artikel agar responsif */
+.content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Untuk menengahkan gambar */
+    border-radius: 8px; /* Membuat sudut gambar sedikit melengkung */
+}
+
+/* Gaya untuk tautan */
+a {
+    color: #FFD700; /* Warna emas untuk tautan */
+}
+
+/* Gaya untuk tombol */
+.button, .btn {
+    background-color: #810101; /* Warna hijau Natal */
+    border: none;
+    color: white;
+}
+
+/* Gaya untuk judul artikel */
+.toggle-content {
+    color: #f10808;
+    cursor: pointer;
+}
+
+/* Efek hover pada judul artikel */
+.toggle-content:hover {
+    color: #FFD700;
+}
+/* Gaya Mode Berantakan */
+.messy-mode body {
+    background-color: #f1c40f; /* Warna latar belakang terang */
+    color: #e74c3c; /* Warna teks kontras */
+}
+
+.messy-mode h1, .messy-mode h2, .messy-mode h3, .messy-mode h4 {
+    color: #8e44ad; /* Warna kontras untuk judul */
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.messy-mode .header-image {
+    filter: grayscale(100%);
+}
+
+.messy-mode .content article {
+    background-color: #3498db; /* Warna acak untuk latar belakang */
+    color: #000; /* Warna teks kontras */
+}
+
+.messy-mode a {
+    color: #ff0000; /* Warna merah terang untuk tautan */
+}
+
+.messy-mode .toggle-content {
+    color: #ffff00; /* Warna kuning mencolok */
+}
+
+.messy-mode .btn, .messy-mode .button {
+    background-color: #ff00ff; /* Warna ungu terang */
+    color: #000;
+}
+/* Gaya untuk gambar mode berantakan */
+.chaos-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 300px;
+    max-height: 300px;
+    z-index: 2000;
+    opacity: 0.8; /* Sedikit transparansi */
+    border: 5px solid #ff0000; /* Border merah mencolok */
+    border-radius: 50%; /* Membuat gambar bulat */
+}
+
+/* Sembunyikan gambar secara default */
+.hidden {
+    display: none;
+}
+
+/* Tampilkan gambar saat mode berantakan aktif */
+.messy-mode .chaos-image {
+    display: block;
+}

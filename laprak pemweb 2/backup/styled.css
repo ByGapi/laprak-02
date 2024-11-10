@@ -1,0 +1,107 @@
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #B22222; /* Warna merah Natal */
+    color: #FFFFFF; /* Teks putih untuk kontras */
+}
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(178, 34, 34, 0.9); /* Warna merah dengan transparansi */
+    color: #fff;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sticky-header.hidden {
+    transform: translateY(-100%);
+}
+
+/* Gambar di Header */
+.header-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Letakkan di belakang teks header */
+}
+
+.header-box {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    z-index: 1;
+}
+
+.header-box h1, .header-box h2 {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 8px #8B0000; /* Efek bayangan pada teks */
+}
+
+main {
+    margin-top: 250px; /* Sesuaikan angka sesuai tinggi total header */
+    padding: 20px;
+}
+
+.content article {
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih semi-transparan */
+    border: 1px solid #8B0000; /* Border merah gelap */
+    border-radius: 5px;
+    padding: 20px;
+    color: #000000; /* Teks hitam untuk konten */
+}
+
+@media (max-width: 768px) {
+    main {
+        margin-top: 180px; /* Atur untuk perangkat layar kecil */
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+/* Atur ukuran gambar di artikel agar responsif */
+.content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Untuk menengahkan gambar */
+    border-radius: 8px; /* Membuat sudut gambar sedikit melengkung */
+}
+
+/* Gaya untuk tautan */
+a {
+    color: #FFD700; /* Warna emas untuk tautan */
+}
+
+/* Gaya untuk tombol */
+.button, .btn {
+    background-color: #008000; /* Warna hijau Natal */
+    border: none;
+    color: white;
+}
+
+/* Gaya untuk judul artikel */
+.toggle-content {
+    color: #f10808;
+    cursor: pointer;
+}
+
+/* Efek hover pada judul artikel */
+.toggle-content:hover {
+    color: #FFD700;
+}
